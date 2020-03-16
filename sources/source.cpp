@@ -29,7 +29,7 @@ int main(){
         boost::asio::streambuf input;
         std::ostream os(&output);
         std::istream is(&input);
-        os << "login hello\n";
+        os << "login-hello\n";
         boost::asio::write(socket, output, error);
         std::this_thread::sleep_for(sleepDuration());
         std::string message;
